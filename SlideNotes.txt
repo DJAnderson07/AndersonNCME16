@@ -1,0 +1,16 @@
+# Notes
+
+intro: Make sure to mention that the models may take many forms, and this study will evaluate one VAM.
+
+Cohort effects: Also mention that in elementary schools, only Grades 3-5 are represented in the school effect, because they are the only grades were state test data are available
+
+Content effects: Mention capacity, etc.
+
+School effects model: Mention that this was fit for each cohort and content area
+
+G-theory: Note that variance components and the proportion of variance attributable to each facet is also of considerable interest. Also note that the object of measurement here is schools, rather than students, as in typical applications
+
+Modify G-Theory slide to include
+  <h2>Results: G-Theory</h2>
+  <table style="width:100%"><thead>
+  <caption>Variance Components</caption>

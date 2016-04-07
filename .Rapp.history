@@ -1,0 +1,377 @@
+head(dat)
+apply(dat, 2, table)
+diff <- lapply(2:6, function(i) t(apply(matrix(runif(20*i, .3, 1), 20), 1, cumsum))
+)
+diff
+diff <- lapply(diff, function(d) -(d - rowMeans(d))
+)
+a <- matrix(rlnorm(20,.2,.3))#
+#
+diff <- lapply(2:6, function(i) t(apply(matrix(runif(20*i, .3, 1), 20), 1, cumsum)))#
+diff <- lapply(diff, function(d) -(d - rowMeans(d)))#
+d <- lapply(diff, function(d) d + rnorm(20)
+)
+dat <- lapply(diff, function(d) simdata(a, d, 500, itemtype = 'graded'))
+str(dat)
+diff <- lapply(2:5, function(i) t(apply(matrix(runif(20*i, .3, 1), 20), 1, cumsum)))#
+diff <- lapply(diff, function(d) -(d - rowMeans(d)))#
+d <- lapply(diff, function(d) d + rnorm(20))#
+dat <- lapply(diff, function(d) simdata(a, d, 500, itemtype = 'graded'))#
+str(dat)
+dat <- lapply(dat, as.data.frame)
+dat <- lapply(dat, function(d) apply(d, 2, "-", 1))
+str(dat)
+dat <- lapply(dat, function(d) {#
+    d$id1 <- 1:ncol(d)#
+    d$sex <- sample(c("M", "F"), nrow(d), replace = TRUE)#
+    d$frl <- sample(c("FRL", "Paid"), nrow(d), replace = TRUE)#
+})
+library(mirt)#
+a <- matrix(rlnorm(20,.2,.3))#
+#
+diff <- lapply(2:5, function(i) t(apply(matrix(runif(20*i, .3, 1), 20), 1, cumsum)))#
+diff <- lapply(diff, function(d) -(d - rowMeans(d)))#
+d <- lapply(diff, function(d) d + rnorm(20))#
+dat <- lapply(diff, function(d) simdata(a, d, 500, itemtype = 'graded'))#
+dat <- lapply(dat, as.data.frame)#
+dat <- lapply(dat, function(d) apply(d, 2, "-", 1))#
+#
+dat <- lapply(dat, function(d) {#
+    d$id1 <- 1:ncol(d)#
+    d$sex <- sample(c("M", "F"), nrow(d), replace = TRUE)#
+    d$frl <- sample(c("FRL", "Paid"), nrow(d), replace = TRUE)#
+return(d)#
+})
+library(mirt)#
+a <- matrix(rlnorm(20,.2,.3))#
+#
+diff <- lapply(2:5, function(i) t(apply(matrix(runif(20*i, .3, 1), 20), 1, cumsum)))#
+diff <- lapply(diff, function(d) -(d - rowMeans(d)))#
+d <- lapply(diff, function(d) d + rnorm(20))#
+dat <- lapply(diff, function(d) simdata(a, d, 500, itemtype = 'graded'))#
+dat <- lapply(dat, as.data.frame)
+str(dat)
+dat <- lapply(dat, function(d) apply(d, 2, "-", 1))
+str(dat)
+dat <- lapply(dat, as.data.frame)
+str(dat)
+dat <- lapply(dat, function(d) {#
+    d$id1 <- 1:ncol(d)#
+    d$sex <- sample(c("M", "F"), nrow(d), replace = TRUE)#
+    d$frl <- sample(c("FRL", "Paid"), nrow(d), replace = TRUE)#
+return(d)#
+})
+str(dat)
+demos <- lapply(dat, "[", 21:23)
+str(demos)
+itms <- lapply(dat, "[", 1:20)
+pars <- batchRunWinsteps(itms, demos)
+library(r2Winsteps)
+pars <- batchRunWinsteps(itms, demos)
+plot(pars[[1]], type = "ICP")
+pars[[1]]
+plot(list(pars[[1]][[1]], pars[[2]][[1]]), type = "ICP")
+pars[[1]][[1]]
+str(pars)
+demos[[1]]
+pars1 <- runWinsteps(itms[[1]], demos[[1]])
+plot(pars1, type = "ICP", itemSelect = 1)
+plot(pars1, type = "ICP")
+str(pars1)
+plot(pars1)
+library(mirt)
+a <- matrix(rlnorm(20,.2,.3))
+diff <- lapply(2:5, function(i) t(apply(matrix(runif(20*i, .3, 1), 20), 1, cumsum)))#
+diff <- lapply(diff, function(d) -(d - rowMeans(d)))#
+d <- lapply(diff, function(d) d + rnorm(20))
+dat <- lapply(diff, function(d) simdata(a, d, 500, itemtype = 'graded'))\
+dat <- lapply(diff, function(d) simdata(a, d, 500, itemtype = 'graded'))
+dat <- lapply(dat, function(d) apply(d, 2, "-", 1))
+dat <- lapply(dat, as.data.frame)
+dat <- lapply(dat, function(d) {#
+    d$id1 <- 1:ncol(d)#
+    d$sex <- sample(c("M", "F"), nrow(d), replace = TRUE)#
+    d$frl <- sample(c("FRL", "Paid"), nrow(d), replace = TRUE)#
+return(d)#
+})
+demos <- lapply(dat, "[", 21:23)
+itms <- lapply(dat, "[", 1:20)
+library(r2Winsteps)
+pars1 <- runWinsteps(itms[[1]], demos[[1]])
+plot(pars1, type = "ICP", itemSelect = 1)
+plot(pars1, type = "ICP")
+pars2 <- runWinsteps(itms[[2]], demos[[2]])
+pars3 <- runWinsteps(itms[[3]], demos[[3]])
+itms[[3]]
+demos[[3]]
+pars3 <- runWinsteps(itms[[3]], demos[[3]])
+pars4 <- runWinsteps(itms[[4]], demos[[4]])
+plot(pars4, type = "ICP")
+plot(pars3, type = "ICP")
+plot(pars2, type = "ICP")
+library(mirt)
+head(dat[[1]])
+pars <- batchRunWinsteps(itms, demos)
+str(pars)
+pars1 <- runWinsteps(itms[[1]], demos[[1]])
+plot(pars1, type = "ICP") # Fix itemSelect function for ICP type plot
+plot(pars1, type = "TIF") # Fix itemSelect function for ICP type plot
+plot(pars1, type = "ICCs") # Fix itemSelect function for ICP type plot
+?plot.r2winsteps
+?r2Winsteps
+plot(pars1, type = "IIF") # Fix itemSelect function for ICP type plot
+plot(pars1, type = "IIFs") # Fix itemSelect function for ICP type plot
+plot(pars1, type = "TIF/IIF") # Fix itemSelect function for ICP type plot
+plot(pars1, type = "TIF/IIF", itemSelect = c(1, 3, 5)) # Fix itemSelect function for ICP type plot
+plot(pars1, type = "TIF/IIF", itemSelect = -c(1, 3, 5)) # Fix itemSelect function for ICP type plot
+pars_LSAT <- runWinsteps(LSAT[ ,4:8], LSAT[ ,1:3])
+b <-  pars_LSAT$ItemParameters$Difficulty
+b
+prob <- function(b, theta) {#
+        1 /(1 + exp(-(theta - b)))#
+    }
+p <- sapply(b, prob, theta)
+theta = seq(-4, 4, 0.1)
+p <- sapply(b, prob, theta)
+p
+b
+names(b) <- ob$ItemParameters$ItemID
+names(b) <- pars_LSAT$ItemParameters$ItemID
+b
+itemSelect <- c(1, 3)
+b[ ,itemSelect]
+itemSelect <- c(1, 3)
+b[itemSelect]
+names(b)
+b <-  pars_LSAT$ItemParameters$Difficulty#
+    names(b) <- substr(#
+                        as.character(pars_LSAT$ItemParameters$ItemID), #
+                        2, #
+                        nchar(as.character(pars_LSAT$ItemParameters$ItemID)))
+b
+p <- sapply(b, prob, theta)
+q <- 1 - p
+IIF <- p*q
+colnames(IIF) <- names(b)
+colnames(p) <- names(b)
+IIF
+itemSelect <- c("Item 1", "Item 3")
+b[itemSelect]
+b <- b[itemSelect]
+p <- sapply(b, prob, theta)
+q <- 1 - p
+IIF <- p*q
+colnames(IIF) <- names(b)
+colnames(p) <- names(b)
+plot(theta, rowSums(IIF), #
+            type = "l", #
+            xlab = expression(Theta),#
+            ylab = "Information", #
+            main = "Test Information Function"
+)
+par(mar=c(5, 4, 4, 8) + .1, xpd = TRUE)#
+#
+        yUpperLim <- max(apply(IIF, 2, max))#
+        plot(theta, seq(0, yUpperLim, length.out = length(theta)),#
+            type = "n", #
+            xlab = expression(Theta),#
+            ylab = "Information", #
+            main = "Item Information Functions"
+)
+for(i in 1:ncol(IIF)) lines(theta, IIF[ ,i], col = colors[i])
+legend("topright",
+inset = c(-0.3, 0),
+legend = colnames(IIF),
+col = colors,
+colors <- rainbow(ncol(IIF))
+for(i in 1:ncol(IIF)) lines(theta, IIF[ ,i], col = colors[i])
+colors <- rainbow(ncol(IIF))
+for(i in 1:ncol(IIF)) lines(theta, IIF[ ,i], col = colors[i])
+legend("topright",
+inset = c(-0.3, 0),
+legend = colnames(IIF),
+col = colors,
+lty = 1)
+par(mar=c(5, 4, 4, 8) + .1, xpd = TRUE)
+plot(theta, rowSums(IIF), type = "l", #
+                ylim = c(0, max(rowSums(IIF))),#
+            xlab = expression(Theta),#
+            ylab = "Information", #
+            main = "Test and Item Information Functions"
+)
+for(i in 1:ncol(IIF)) lines(theta, IIF[ ,i], col = colors[i])
+legend("topright",
+inset = c(-0.3, 0),
+legend = c("TIF", colnames(IIF)),
+col = c(1, colors),
+lty = 1)
+expectedTotal <- rowSums(p)
+plot(theta, expectedTotal, #
+            type = "l",#
+            xlab = expression(Theta),#
+            ylab = "Expected Total Raw Score",#
+            main = "Test Characteristic Curve"
+)
+plot(theta, seq(0, 1, length.out = length(theta)), #
+            type = "n",#
+            xlab = expression(Theta),#
+            ylab = "Expected Total Raw Score",#
+            main = "Item Characteristic Curves"
+)
+for(i in 1:ncol(p)) lines(theta, p[ ,i], col = colors[i])
+legend("topright", #
+            inset = c(-0.3, 0), #
+            legend = colnames(p),#
+            col = colors,#
+            lty = 1)
+diff <- lapply(2:5, function(i) t(apply(matrix(runif(20*i, .3, 1), 20), 1, cumsum)))
+library(mirt)#
+a <- matrix(rlnorm(20,.2,.3))#
+#
+diff <- lapply(2:5, function(i) t(apply(matrix(runif(20*i, .3, 1), 20), 1, cumsum)))#
+diff <- lapply(diff, function(d) -(d - rowMeans(d)))#
+d <- lapply(diff, function(d) d + rnorm(20))#
+dat <- lapply(diff, function(d) simdata(a, d, 500, itemtype = 'graded'))#
+dat <- lapply(dat, function(d) apply(d, 2, "-", 1))#
+dat <- lapply(dat, as.data.frame)#
+#
+dat <- lapply(dat, function(d) {#
+    d$id1 <- 1:ncol(d)#
+    d$sex <- sample(c("M", "F"), nrow(d), replace = TRUE)#
+    d$frl <- sample(c("FRL", "Paid"), nrow(d), replace = TRUE)#
+return(d)#
+})#
+#
+demos <- lapply(dat, "[", 21:23)#
+itms <- lapply(dat, "[", 1:20)
+library(r2Winsteps)
+pars4 <- runWinsteps(itms[[4]], demos[[4]])
+pat = "Sfile"
+files <- list.files(pattern = pat)
+files
+sfiles <- vector("list", length(files))
+for(i in 1:length(sfiles)) {#
+        sfiles[[i]] <- read.table(files[i], skip = 2) #
+        if(ncol(sfiles[[i]] == 3)) {#
+            colnames(sfiles[[i]]) = c("Item", "Category", "delta")    #
+        }#
+        if(ncol(sfiles[[i]] == 2)) {#
+            colnames(sfiles[[i]]) = c("Category", "delta")    #
+        }  #
+    }
+ncol(sfiles[[1]] == 3
+)
+ncol(sfiles[[1]] == 3)
+ncol(sfiles[[1]]) == 3
+library(mirt)#
+a <- matrix(rlnorm(20,.2,.3))#
+#
+diff <- lapply(2:5, function(i) t(apply(matrix(runif(20*i, .3, 1), 20), 1, cumsum)))#
+diff <- lapply(diff, function(d) -(d - rowMeans(d)))#
+d <- lapply(diff, function(d) d + rnorm(20))#
+dat <- lapply(diff, function(d) simdata(a, d, 500, itemtype = 'graded'))#
+dat <- lapply(dat, function(d) apply(d, 2, "-", 1))#
+dat <- lapply(dat, as.data.frame)#
+#
+dat <- lapply(dat, function(d) {#
+    d$id1 <- 1:ncol(d)#
+    d$sex <- sample(c("M", "F"), nrow(d), replace = TRUE)#
+    d$frl <- sample(c("FRL", "Paid"), nrow(d), replace = TRUE)#
+return(d)#
+})#
+#
+demos <- lapply(dat, "[", 21:23)#
+itms <- lapply(dat, "[", 1:20)#
+#
+library(r2Winsteps)
+pars4 <- r2Winsteps(itms[[4]], demos[[4]], partialCredit = TRUE)
+pars4 <- runWinsteps(itms[[4]], demos[[4]], partialCredit = TRUE)
+plot(pars4, type = "thresholds", itemSelect = 1)
+str(pars4)
+sfile <- pars4$StructureFiles
+par(mar=c(5, 4, 4, 8) + .1, xpd = TRUE)
+sfile <- subset(sfile, Category != 0)
+cats <- sapply(split(sfile, sfile$Item), nrow)
+cumulative <- cumsum(cats)
+cumulative
+p <- function(delta) exp(theta - delta) / (1 + exp(theta - delta))
+probs <- mapply(p, sfile$Threshold)
+probs
+sfile$Threshold
+probs <- mapply(p, sfile$delta)
+citation(package = "ggplot2")
+citation(package = "knitr")
+install.package("lattice")
+install.packages("lattice")
+citation(package = "lattice")
+citation(package = "r2Winsteps")
+devtools::install_github('yihui/knitr')
+library(knitr)
+install.packages("knitr", dependencies = TRUE)
+library(knitr)
+install.packages("knitr", dependencies = TRUE)
+library(kntir)
+library(knitr)
+setwd("/Users/Daniel/BRT/Conferences/2016/NCME/VAMCohortEffects/Presentation/Slides/")
+library(slidify)
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+cacheLoad("gVars")
+print(gVarsX,#
+    caption.placement = "top",#
+    sanitize.text.function = function(x) x)
+gVarsX
+gVarsX
+slidify("index.Rmd")
+paste(c("Math", "Reading"), "Percentage")
+slidify("index.Rmd")
+ls()
+gVarsX
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+?pairs
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
+slidify("index.Rmd")
