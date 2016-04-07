@@ -23,7 +23,6 @@ mode        : selfcontained # {standalone, draft}
 ---
 
 ## Introduction
-* Test
 * Value added Models, or VAMs:
 	* Are intended to measure the effect of teachers and/or schools on students' achievement
 	* Establishing the stability (reliability) of the models is prerequisite to establishing validity, which is foundational for their use in high-stakes policy applications
