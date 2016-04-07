@@ -164,7 +164,7 @@ $$
 *** =right
 
 <div align = center>
-<img src = ../writing/figure/pairs-1.pdf width = 650 height = 650>
+<img src = ../writing/figure/pairs-1.png width = 650 height = 650>
 </div>
 
 *** =left
@@ -182,7 +182,7 @@ $$
 *** =left
 
 <div align = "center">
-<img src = ../writing/figure/pairs-2.pdf width = 650 height = 650>
+<img src = ../writing/figure/pairs-2.png width = 650 height = 650>
 </div>
 
 *** =right
@@ -221,7 +221,7 @@ $\Phi =$ 0.92 and 0.95 for reading and math, respectively
 ----
 ## Results: D-Study
 <div align = "right">
-<img src = ../writing/figure/dstudy-1.pdf width = 1000 height = 500>
+<img src = ../writing/figure/dstudy-1.png width = 1000 height = 500>
 </div>
 
 ----
