@@ -215,7 +215,10 @@ $$
 * ~ `r botTopR`% of schools moved from the bottom to the top quartile, or vice versa, depending on the specific cohort modeled
 
 ----
-## Results: School-effect variability across content areas
+## Variability across content areas
+* > ~ `r round(jumps(c08, 1))`%, `r round(jumps(c09, 1))`%, and `r round(jumps(c10, 1))`% of schools maintained their normative quartile ranking between content areas, for Cohorts 08-10, respectively
+* > ~ `r min(oneCatChange)`% to `r max(oneCatChange)`% of schools changed one quartile
+* > ~ `r min(twoCatChange)`% to `r max(twoCatChange)`% of schools changed two quartiles
 
 ----
 ## Results: G-Theory

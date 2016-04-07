@@ -194,7 +194,10 @@ $$
 * ~ 3% of schools moved from the bottom to the top quartile, or vice versa, depending on the specific cohort modeled
 
 ----
-## Results: School-effect variability across content areas
+## Variability across content areas
+* > ~ 53%, 55%, and 52% of schools maintained their normative quartile ranking between content areas, for Cohorts 08-10, respectively
+* > ~ 36% to 39% of schools changed one quartile
+* > ~ 7% to 9% of schools changed two quartiles
 
 ----
 ## Results: G-Theory
