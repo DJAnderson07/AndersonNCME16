@@ -226,7 +226,7 @@ $$
 gVarsX <- as.data.frame(gVarsX)
 names(gVarsX) <- c("Math", "Percentage", "Reading", "Percentage")
 
-xtable::print.xtable(gVarsX, digits = 2, align = "c", type = "html")
+knitr::kable(gVarsX, digits = 2, align = "c")
 ```
 <br>
 $G =$ `r mthG[3]` and `r rdgG[3]` for reading and math, respectively

@@ -201,54 +201,14 @@ $$
 
 ----
 ## Results: G-Theory
-<table>
- <thead>
-  <tr>
-   <th style="text-align:left;">   </th>
-   <th style="text-align:center;"> Math </th>
-   <th style="text-align:center;"> Percentage </th>
-   <th style="text-align:center;"> Reading </th>
-   <th style="text-align:center;"> Percentage </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> $\sigma_{stu}^2$ </td>
-   <td style="text-align:center;"> 55.63 </td>
-   <td style="text-align:center;"> 67.5 </td>
-   <td style="text-align:center;"> 44.02 </td>
-   <td style="text-align:center;"> 68.43 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> $\sigma_{sch}^2$ </td>
-   <td style="text-align:center;"> 8.68 </td>
-   <td style="text-align:center;"> 10.5 </td>
-   <td style="text-align:center;"> 6.07 </td>
-   <td style="text-align:center;"> 9.44 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> $\sigma_{coh}^2$ </td>
-   <td style="text-align:center;"> 0.84 </td>
-   <td style="text-align:center;"> 1.0 </td>
-   <td style="text-align:center;"> 0.08 </td>
-   <td style="text-align:center;"> 0.12 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> $\sigma_{cohSch}^2$ </td>
-   <td style="text-align:center;"> 1.51 </td>
-   <td style="text-align:center;"> 1.8 </td>
-   <td style="text-align:center;"> 0.84 </td>
-   <td style="text-align:center;"> 1.30 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> $\sigma_{e}^2$ </td>
-   <td style="text-align:center;"> 15.82 </td>
-   <td style="text-align:center;"> 19.2 </td>
-   <td style="text-align:center;"> 13.32 </td>
-   <td style="text-align:center;"> 20.71 </td>
-  </tr>
-</tbody>
-</table>
+
+|                    | Math  | Percentage | Reading | Percentage |
+|:-------------------|:-----:|:----------:|:-------:|:----------:|
+|$\sigma_{stu}^2$    | 55.63 |    67.5    |  44.02  |   68.43    |
+|$\sigma_{sch}^2$    | 8.68  |    10.5    |  6.07   |    9.44    |
+|$\sigma_{coh}^2$    | 0.84  |    1.0     |  0.08   |    0.12    |
+|$\sigma_{cohSch}^2$ | 1.51  |    1.8     |  0.84   |    1.30    |
+|$\sigma_{e}^2$      | 15.82 |    19.2    |  13.32  |   20.71    |
 <br>
 $G =$ 0.95 and 0.96 for reading and math, respectively
 
