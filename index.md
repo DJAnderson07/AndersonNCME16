@@ -55,7 +55,6 @@ mode        : selfcontained # {standalone, draft}
 
 ---
 ## Methods: Sample
-
 ### Demographics
 
 |         | Proportion|
@@ -64,6 +63,7 @@ mode        : selfcontained # {standalone, draft}
 |SWD      |         12|
 |Female   |         50|
 |FRL      |         50|
+
 
 <br>
 > * Operational statewide accountability data
