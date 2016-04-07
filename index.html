@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="libraries/frameworks/deckjs/extensions/navigation/deck.navigation.css">
 <link rel="stylesheet" href="libraries/frameworks/deckjs/extensions/scale/deck.scale.css">
 <link rel="stylesheet" href="libraries/frameworks/deckjs/extensions/annotate/deck.annotate.css">
+<link rel="stylesheet" href="libraries/frameworks/deckjs/extensions/status/deck.status.css">
 <!-- Style theme. More available in /themes/style/  -->
 	<link rel="stylesheet" href="libraries/frameworks/deckjs/themes/style/swiss.css">
 	
@@ -49,21 +50,17 @@
 </section>
 <section class="slide " id="slide-2">
   <h2>Introduction</h2>
-  <ul>
-<li>Value added Models, or VAMs:
-
-<ul>
-<li>Are intended to measure the effect of teachers and/or schools on students&#39; achievement</li>
-<li>Establishing the stability (reliability) of the models is prerequisite to establishing validity, which is foundational for their use in high-stakes policy applications</li>
-</ul></li>
-</ul>
+  <p class='slide'><strong>Value added Models, or VAMs:</strong></p>
 
 <ul class = "build incremental">
-<li> Study purpose
+<li>Are intended to measure the effect of teachers and/or schools on students&#39; achievement</li>
+<li>Establishing the stability (reliability) of the models is prerequisite to establishing validity, which is foundational for their use in high-stakes policy applications</li>
+</ul>
 
-<ul>
+<p class='slide'><strong>Study purpose</strong></p>
+
+<ul class = "build incremental">
 <li>Evaluate the stability of school-level VAM estimates across <em>cohorts</em> and <em>content area</em>.</li>
-</ul></li>
 </ul>
 
 </section>
@@ -71,12 +68,13 @@
   <h2>Cohort effects</h2>
   <ul class = "build incremental">
 <li>VAMs assume estimates do not depend on the specific sample of students modeled.</li>
-<li>Typically, only one cohort of students is included in estimates.
+<li>Typically, only one year of data is included in estimates.
 
 <ul>
 <li>Estimates may then be representative of policy or implementation effects</li>
 <li>Student mobility is high in many schools</li>
 </ul></li>
+<li>If school effects do depend, in part, on sampling variability, then the validity of estimates is threatened </li>
 </ul>
 
 </section>
@@ -166,8 +164,8 @@ RIT_{ig} = \alpha + \beta_1(g4) + \beta_2(Pr \times g3_4) +
 <li>\(r_i\) and \(u_j\): Random by-student and by-school variation
 
 <ul>
-<li>\(r_i \sim N(0, \sigma_{stu}^2)\) </li>
-<li>\(u_j \sim N(0, \sigma_{sch}^2)\)</li>
+<li>\(r_i \sim N(0, \sigma_{stu})\) </li>
+<li>\(u_j \sim N(0, \sigma_{sch})\)</li>
 </ul></li>
 <li>\(e_{ij}\): Unmodeled residual variance
 
@@ -214,12 +212,12 @@ RIT_{ig} = \alpha + \beta_1(g4) + \beta_2(Pr \times g3_4) +
 <li>\(v_c\): Random cohort variation
 
 <ul>
-<li>\(v_c \sim N(0, \sigma_{coh}^2)\)</li>
+<li>\(v_c \sim N(0, \sigma_{coh})\)</li>
 </ul></li>
 <li>\(v_cu_j\): Random cohort by school variation (latent interaction variable)
 
 <ul>
-<li>\(v_cu_j \sim N(0, \sigma_{cohSch}^2)\)</li>
+<li>\(v_cu_j \sim N(0, \sigma_{cohSch})\)</li>
 </ul></li>
 </ul>
 
@@ -303,7 +301,9 @@ G = \frac{\sigma_{sch}^2}{\sigma_{sch}^2 +
 </section>
 <section class="slide " id="slide-16">
   <h2>Results: G-Theory</h2>
-  <table><thead>
+  <table style="width:100%"><thead>
+  <caption>Variance Components</caption>
+  <thead>
 <tr>
 <th align="left"></th>
 <th align="center">Math</th>
@@ -349,10 +349,13 @@ G = \frac{\sigma_{sch}^2}{\sigma_{sch}^2 +
 </tr>
 </tbody></table>
 
-<p><br>
-\(G =\) 0.95 and 0.96 for reading and math, respectively</p>
+<p><br></p>
 
-<p>\(\Phi =\) 0.92 and 0.95 for reading and math, respectively</p>
+<p class='slide'>
+$G =$ 0.95 and 0.96 for reading and math, respectively
+<br>
+$\Phi =$ 0.92 and 0.95 for reading and math, respectively
+</p>
 
 <ul class = "build incremental">
 <li>Majority of variance associated with students, followed by unmodeled variance</li>
@@ -455,6 +458,7 @@ Correspondence concerning this manuscript should be addressed to Daniel Anderson
 <script src="libraries/frameworks/deckjs/extensions/navigation/deck.navigation.js"></script>
 <script src="libraries/frameworks/deckjs/extensions/scale/deck.scale.js"></script>
 <script src="libraries/frameworks/deckjs/extensions/annotate/deck.annotate.js"></script>
+<script src="libraries/frameworks/deckjs/extensions/status/deck.status.js"></script>
 <!-- Initialize the deck -->
   <script>
   $(function() {

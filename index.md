@@ -6,7 +6,7 @@ framework: deckjs
 deckjs:
   theme: swiss
   transition: fade
-  extensions: [goto, hash, menu, navigation, scale, annotate]
+  extensions: [goto, hash, menu, navigation, scale, annotate, status]
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
@@ -23,19 +23,20 @@ mode        : selfcontained # {standalone, draft}
 ---
 
 ## Introduction
-* Value added Models, or VAMs:
-	* Are intended to measure the effect of teachers and/or schools on students' achievement
-	* Establishing the stability (reliability) of the models is prerequisite to establishing validity, which is foundational for their use in high-stakes policy applications
+<p class='slide'><strong>Value added Models, or VAMs:</strong></p>
+ > * Are intended to measure the effect of teachers and/or schools on students' achievement
+ > * Establishing the stability (reliability) of the models is prerequisite to establishing validity, which is foundational for their use in high-stakes policy applications
 
-> *  Study purpose
-	* Evaluate the stability of school-level VAM estimates across *cohorts* and *content area*.
+<p class='slide'><strong>Study purpose</strong></p>
+> * Evaluate the stability of school-level VAM estimates across *cohorts* and *content area*.
 
 ---
 ## Cohort effects
 > * VAMs assume estimates do not depend on the specific sample of students modeled.
-> * Typically, only one cohort of students is included in estimates.
+> * Typically, only one year of data is included in estimates.
 	- Estimates may then be representative of policy or implementation effects
 	- Student mobility is high in many schools
+> * If school effects do depend, in part, on sampling variability, then the validity of estimates is threatened 
 
 ---
 ## Content effects
@@ -91,8 +92,8 @@ $$
 	+ $g3_5$: Grade 3 prior state test score, Grade 5 outcome
 	+ $g4_5$: Grade 4 prior state test score, Grade 5 outcome
 > * $r_i$ and $u_j$: Random by-student and by-school variation
-	+ $r_i \sim N(0, \sigma_{stu}^2)$ 
-	+ $u_j \sim N(0, \sigma_{sch}^2)$
+	+ $r_i \sim N(0, \sigma_{stu})$ 
+	+ $u_j \sim N(0, \sigma_{sch})$
 > * $e_{ij}$: Unmodeled residual variance
 	+ $e_{ij} \sim N(0, \sigma_{e})$
 
@@ -128,9 +129,9 @@ RIT_{ig} = \alpha + \beta_1(g4) + \beta_2(Pr \times g3_4) +
 $$
 
 > * $v_c$: Random cohort variation
-	+ $v_c \sim N(0, \sigma_{coh}^2)$
+	+ $v_c \sim N(0, \sigma_{coh})$
 > * $v_cu_j$: Random cohort by school variation (latent interaction variable)
-	+ $v_cu_j \sim N(0, \sigma_{cohSch}^2)$
+	+ $v_cu_j \sim N(0, \sigma_{cohSch})$
 
 ----
 ## G-Theory
@@ -209,9 +210,11 @@ $$
 |$\sigma_{cohSch}^2$ | 1.51  |    1.8     |  0.84   |    1.30    |
 |$\sigma_{e}^2$      | 15.82 |    19.2    |  13.32  |   20.71    |
 <br>
+<p class='slide'>
 $G =$ 0.95 and 0.96 for reading and math, respectively
-
+<br>
 $\Phi =$ 0.92 and 0.95 for reading and math, respectively
+</p>
 
 > * Majority of variance associated with students, followed by unmodeled variance
 > * Schools next most important facet
