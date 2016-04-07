@@ -55,8 +55,7 @@ mode        : selfcontained # {standalone, draft}
 ---
 ## Methods: Sample
 
-### Operational statewide accountability data
-#### Demographics
+### Demographics
 
 |         | Proportion|
 |:--------|----------:|
@@ -66,7 +65,7 @@ mode        : selfcontained # {standalone, draft}
 |FRL      |         50|
 
 <br>
-
+> * Operational statewide accountability data
 > * Three cohorts of  students matched longitudinally across Grades 3-5 (approximately 27000 students per cohort)
 > * 727 schools, with an average of 122.44 students per school (*SD* = 95.17)
 
@@ -195,9 +194,9 @@ $$
 
 ----
 ## Variability across content areas
-* > ~ 53%, 55%, and 52% of schools maintained their normative quartile ranking between content areas, for Cohorts 08-10, respectively
-* > ~ 36% to 39% of schools changed one quartile
-* > ~ 7% to 9% of schools changed two quartiles
+> * ~ 53%, 55%, and 52% of schools maintained their normative quartile ranking between content areas, for Cohorts 08-10, respectively
+> * ~ 36% to 39% of schools changed one quartile
+> * ~ 7% to 9% of schools changed two quartiles
 
 ----
 ## Results: G-Theory

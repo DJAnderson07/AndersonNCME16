@@ -76,8 +76,7 @@ bib <- read.bibtex("CohortContentEffects.bib")
 ---
 ## Methods: Sample
 
-### Operational statewide accountability data
-#### Demographics
+### Demographics
 ```{r demoTable, echo = FALSE, results = "asis"}
 dems <- as.data.frame(percDems)
 
@@ -87,7 +86,7 @@ knitr::kable(dems,
 ```
 
 <br>
-
+> * Operational statewide accountability data
 > * Three cohorts of  students matched longitudinally across Grades 3-5 (approximately `r cohSize` students per cohort)
 > * `r nSch` schools, with an average of `r nByJ_Mean` students per school (*SD* = `r nByJ_SD`)
 
@@ -216,9 +215,9 @@ $$
 
 ----
 ## Variability across content areas
-* > ~ `r round(jumps(c08, 1))`%, `r round(jumps(c09, 1))`%, and `r round(jumps(c10, 1))`% of schools maintained their normative quartile ranking between content areas, for Cohorts 08-10, respectively
-* > ~ `r min(oneCatChange)`% to `r max(oneCatChange)`% of schools changed one quartile
-* > ~ `r min(twoCatChange)`% to `r max(twoCatChange)`% of schools changed two quartiles
+> * ~ `r round(jumps(c08, 1))`%, `r round(jumps(c09, 1))`%, and `r round(jumps(c10, 1))`% of schools maintained their normative quartile ranking between content areas, for Cohorts 08-10, respectively
+> * ~ `r min(oneCatChange)`% to `r max(oneCatChange)`% of schools changed one quartile
+> * ~ `r min(twoCatChange)`% to `r max(twoCatChange)`% of schools changed two quartiles
 
 ----
 ## Results: G-Theory
