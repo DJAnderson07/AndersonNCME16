@@ -76,7 +76,7 @@ bib <- read.bibtex("CohortContentEffects.bib")
 
 ---
 ## Methods: Sample
-
+<p class='slide'>
 ### Demographics
 ```{r demoTable, echo = FALSE, results = "asis"}
 dems <- as.data.frame(percDems)
@@ -85,6 +85,7 @@ knitr::kable(dems,
 	col.names = "Proportion",
 	digits = 2)
 ```
+</p>
 
 <br>
 > * Operational statewide accountability data
